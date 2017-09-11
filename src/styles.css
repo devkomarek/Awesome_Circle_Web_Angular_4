@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: cs_regular;
+  src: url("./assets/cs_regular.ttf")
+}
+
+*{
+  font-family: cs_regular;
+}
+
+body {
+  padding-top: 50px;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../node_modules/bootstrap/fonts/glyphicons-halflings-regular.eot');
+  src: url('../node_modules/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../node_modules/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../node_modules/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+.divSpace {
+  /*border-top: 50px solid transparent;*/
+  /*margin-top: -50px;*/
+  /*-webkit-background-clip: padding-box;*/
+  /*-moz-background-clip: padding;*/
+  /*background-clip: padding-box;*/
+
+  position: relative;
+  padding: 15px;
+  border-top: 52px solid transparent;
+  margin-top: -50px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}

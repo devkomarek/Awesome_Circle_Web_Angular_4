@@ -1,0 +1,15 @@
+.btn-xl {
+  padding: 14px 28px;
+  font-size: 25px;
+  border-radius: 8px;
+}
+
+.btn:focus,.btn:active {
+  outline: none !important;
+}
+
+@media(max-width: 313px){
+  .btn-success,.btn{
+    padding-top: 50px;
+  }
+}

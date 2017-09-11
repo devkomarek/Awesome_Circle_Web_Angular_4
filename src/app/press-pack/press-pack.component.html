@@ -1,0 +1,339 @@
+
+
+  <div class="navbar-right" style="padding-right: 40px">
+   <button (click)="togglePolish()" class="btn" [ngClass]="{'btn-success': !languageChanger.isEnglish}"
+           style="font-family: Consolas;font-size: 100%">
+      PL</button>
+    <button (click)="toggleEnglish()" class="btn btn-success" [ngClass]="{'btn-success':languageChanger.isEnglish}"
+            style="font-family: Consolas;font-size: 100%">
+      EN</button>
+  </div>
+
+
+
+<div *ngIf="!languageChanger.isEnglish">
+<div class="container" style="padding-bottom: 40px">
+  <div id="danePodstawowe">
+    <h1>Dane podstawowe</h1>
+    <hr>
+    <div class="container" >
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <h5 style="text-align: center; font-family: Consolas">Nazwa Gry</h5>
+          <h6 style="text-align: center;color: gray; font-family: Consolas">Awesome Circle</h6>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <h5 style="text-align: center; font-family: Consolas">Gatunek</h5>
+          <h6 style="text-align: center;color: gray; font-family: Consolas">Gra akcji</h6>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <h5 style="text-align: center; font-family: Consolas">Twórca</h5>
+          <h6 style="text-align: center;color: gray; font-family: Consolas">Łukasz Szymszon "komarek"</h6>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <h5 style="text-align: center; font-family: Consolas">Kontakt</h5>
+          <h6 style="text-align: center;color: gray; font-family: Consolas">devkomarek@gmail.com</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <h5 style="text-align: center; font-family: Consolas">Platforma/premiera</h5>
+          <h6 style="text-align: center;color: gray; font-family: Consolas"><a style="font-family: Consolas;font-size: 13px" target="_blank" href="https://goo.gl/BySLhR">Android (4.09.2017)</a></h6>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <h5 style="text-align: center; font-family: Consolas">Oficjalna strona gry</h5>
+          <h6 style="text-align: center;color: gray; font-family: Consolas"><a style="font-family: Consolas;font-size: 13px" href="http://www.awesomecircle.pl" target="_blank">http://www.awesomecircle.pl</a></h6>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <h5 style="text-align: center; font-family: Consolas">Model biznesowy</h5>
+          <h6 style="text-align: center;color: gray; font-family: Consolas">Free z opcjonalnymi reklamami</h6>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <h5 style="text-align: center; font-family: Consolas">Płatności w aplikacji</h5>
+          <h6 style="text-align: center;color: gray; font-family: Consolas">brak</h6>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div *ngIf="languageChanger.isEnglish" style="padding-bottom: 40px">
+  <div class="container">
+    <div id="factsheet">
+      <h1>Factsheet</h1>
+      <hr>
+      <div class="container" >
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <h5 style="text-align: center; font-family: Consolas">App name</h5>
+            <h6 style="text-align: center;color: gray; font-family: Consolas">Awesome Circle</h6>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <h5 style="text-align: center; font-family: Consolas">Genre</h5>
+            <h6 style="text-align: center;color: gray; font-family: Consolas">Action game</h6>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <h5 style="text-align: center; font-family: Consolas">Developer name and country</h5>
+            <h6 style="text-align: center;color: gray; font-family: Consolas">Lukas Szymszon "komarek", Poland</h6>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <h5 style="text-align: center; font-family: Consolas">Contact</h5>
+            <h6 style="text-align: center;color: gray; font-family: Consolas">devkomarek@gmail.com</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <h5 style="text-align: center; font-family: Consolas">Platforms/release</h5>
+            <h6 style="text-align: center;color: gray; font-family: Consolas"><a style="font-family: Consolas;font-size: 13px" target="_blank" href="https://goo.gl/BySLhR">Android (4.09.2017)</a></h6>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <h5 style="text-align: center; font-family: Consolas">Official game site</h5>
+            <h6 style="text-align: center;color: gray; font-family: Consolas"><a style="font-family: Consolas;font-size: 13px" href="http://www.awesomecircle.pl" target="_blank">http://www.awesomecircle.pl</a></h6>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <h5 style="text-align: center; font-family: Consolas">Business model</h5>
+            <h6 style="text-align: center;color: gray; font-family: Consolas">Free with optional advertising</h6>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <h5 style="text-align: center; font-family: Consolas">In-app payments</h5>
+            <h6 style="text-align: center;color: gray; font-family: Consolas">Missing payment</h6>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<hr>
+<div *ngIf="!languageChanger.isEnglish">
+<div style="background-color: darkgray">
+  <div id="opisGry" class="divSpace container">
+    <h1>Opis gry</h1>
+    <hr>
+    <div style="font-size: 16px; text-align: left" class="col-xs-11">
+      <p style="font-family: Raleway; text-align: justify">Awesome Circle jest to gra zręcznościowa stworzona w całości przez jedną osobę.
+        Gra składa się z 5 bardzo wymagających poziomów.
+        Usiądź i wczuj się w niesamowitą muzykę, bowiem na każdy poziom został przygotowany osobny utwór.
+        Mimo to że rdzeń rozgrywki oparty jest na prostych zasadach, gra stanowi niesamowite wyzwanie dla gracza.
+        Zasady: Chwyć za telefon, włącz poziom i przetrwaj minimum 60 sekund aby odblokować następny poziom.
+        Proste prawda?
+        Wykorzystując potencjał ekranu sprawiło że sterowanie jest bardziej intuicyjne.
+        Żeby strzelić wystarczy nacisnąć na dowolny punkt na ekranie.
+        Strzelając trafiaj w nadlatujące okręgi, aby przeszkodzić im w dotarciu do środka ekranu.
+        W przypadku przegranej, nie martw się. Porażka w grze to nieodłączny element rozgrywki.
+        To proces nabywania zręczności i szlifowania koncentracji.
+        Z czasem twoje umiejętności na pewno przerosną grę.
+        Do tego celu został przygotowany specjalny tryb, który pozwala jeszcze raz ukończyć grę z jeszcze trudniejszymi
+        poziomami.
+        Tryb przygotowany dla najbardziej wymagających graczy w którym nie ma miejsca na błędy.
+      </p>
+    </div>
+  </div>
+  <hr>
+</div>
+</div>
+
+
+<div *ngIf="languageChanger.isEnglish">
+  <div style="background-color: darkgray">
+    <div id="description" class="divSpace container">
+      <h1>Description</h1>
+      <hr>
+      <div style="font-size: 16px; text-align: left" class="col-xs-11">
+        <p style="font-family: Raleway; text-align: justify">
+          Awesome Circle is an arcade game, made entirely by one person. The game consist of 5 very demanding levels. Sit down, feel the music and get into the spirit - each level has its own special piece of music. The game is based on a few simple rules, yet it can be a quite exciting challenge for a player. Grab your phone, run the game and try to spend around 60 seconds to unlock the next level. Sounds simple, doesn't it? By using the touch screen potential, the controls are more intuitive - to hit just touch the screen anywhere. Shoot the incoming flying circles to prevent them from reaching the center of the screen. Don't worry if you lose. Being defeated is an inseparable element of the gameplay. It is a process of acquiring skill and getting better at concentration. Over time, your skills will surely transcend opportunities of the game. For this purpose a special mode has been prepared, which allows you to finish the game once again, this time with even more difficult levels. This mode is prepared for the most demanding players and it doesn't leave any room for errors.
+        </p>
+      </div>
+    </div>
+    <hr>
+  </div>
+</div>
+
+<hr>
+<div *ngIf="!languageChanger.isEnglish">
+<div style="background-color: white">
+  <div [id]="languageChanger.getId('aboutMe')"  class="divSpace container">
+    <h1>O mnie</h1>
+    <hr>
+    <div style="font-size: 16px; text-align: left" class="col-xs-11">
+      <h3 style="font-family: Consolas;text-align: left"><b>Kim jestem</b></h3>
+      <p style="font-family: Raleway; text-align: justify">Hej!
+        Mam na imię Łukasz “komarek” i jestem twórcą Awesome Circle z czego jestem dumny.
+      </p>
+      <h3 style="font-family: Consolas;text-align: left"><b>inspiracja</b></h3>
+      <p style="font-family: Raleway; text-align: justify">
+        Lubię trudne gry!
+        Takie które rzucają graczowi wyzwanie.
+        Nic dziwnego że zakochałem się w grze <a target="_blank" href="http://www.superhexagon.com">Super Hexagon. </a>
+        Był to czas kiedy zagrywałem się w każdy tytuł jaki wpadł mi w ręce.
+        Oprócz tego też myślałem nad stworzeniem własnej gry.
+        W Końcu każdy ma marzenia.
+
+      </p>
+      <h3 style="font-family: Consolas;text-align: left"><b>walka z demonami</b></h3>
+      <p style="font-family: Raleway; text-align: justify">
+        Jest rok 2016.
+        Praktycznie z niewielkim bagażem umiejętności, lecz z ogromną determinacją rozpocząłem pracę nad Awesome Circle.
+        Cel był prosty. Stworzyć grę w 100% samemu.
+        Zobaczyć ile wysiłku trzeba włożyć na każdym etapie produkcji.
+        Przede wszystkim było to sprawdzenie samego siebie.
+        Drugi cel który trzymał mnie tak naprawdę przy pierwszym, jest pokazanie, że jeśli człowiek naprawdę się zmobilizuje to nie ma rzeczy niemożliwych.
+        Liczę żę to co zrobiłem pomoże innym w walce z własnymi słabościami.
+        Dla mnie wewnętrznie była to droga od zera do bohatera z jego wszystkimi zaletami i wadami.
+        Czas na ciebie!
+        Miłego ogrywania.
+      </p>
+    </div>
+  </div>
+  <hr>
+</div>
+</div>
+
+<div *ngIf="languageChanger.isEnglish">
+  <div style="background-color: white">
+    <div [id]="languageChanger.getId('aboutMe')"  class="divSpace container">
+      <h1>About me</h1>
+      <hr>
+      <div style="font-size: 16px; text-align: left" class="col-xs-11">
+        <h3 style="font-family: Consolas;text-align: left"><b>Who i am</b></h3>
+        <p style="font-family: Raleway; text-align: justify">
+          Hi! <br>
+          My name is Lukas „komarek” I am creator of Awesome Circle and I am really proud of it!
+
+        </p>
+        <h3 style="font-family: Consolas;text-align: left"><b>Inspiration</b></h3>
+        <p style="font-family: Raleway; text-align: justify">
+          Personally, I enjoy difficult games with a new set of challenges. It makes much more sense to me to attempt a higher difficulty on the new game through, when I have the intricacies of the gameplay sussed. No wonder that I fell in love with Super Hexagon. This was time when I was playing every game that was close the hand. Besides, I also thought about creating my own game. Everyone has a dream.
+
+
+        </p>
+        <h3 style="font-family: Consolas;text-align: left"><b>Battle within myself</b></h3>
+        <p style="font-family: Raleway; text-align: justify">
+          It is the year 2016. With the little experience but with great determination I started a work on the Awesome Circle. The goal was simple: Make the game 100% by yourself. I wanted to see how much effort I need to put into creating the product. First of all, it is self-examination. The other goal that was really important to me was show myself that one day you do something that seems be impossible. This was the battle against my own weaknesses.
+          For me internally it was a way from zero to hero with all the advantages and disadvantages. It's time for you! Enjoy the game!
+
+        </p>
+      </div>
+    </div>
+    <hr>
+  </div>
+</div>
+
+<hr>
+
+<div style="background-color: darkgray">
+  <div id="videos" class="divSpace container">
+    <h1>{{languageChanger.getLabelName("Trailer")}}</h1>
+    <hr>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/UNUFgm6HJKo"></iframe>
+    </div>
+  </div>
+  <hr>
+</div>
+
+
+<hr>
+
+
+<div style="background-color: white">
+  <div id="images" class="divSpace container">
+    <h1>{{languageChanger.getLabelName("Images")}}</h1>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12" style="margin-top:20px;">
+          <img class="img-rounded" style="width: 100%" src="assets/g1.png">
+        </div>
+        <div class="col-sm-6 col-xs-12" style="margin-top:20px;">
+          <img class="img-rounded" style="width: 100%" src="assets/g2.png">
+        </div>
+      </div>
+
+      <div class="row" >
+        <div class="col-sm-6 col-xs-12" style="margin-top:20px;">
+          <img class="img-rounded" style="width: 100%" src="assets/g3.png">
+        </div>
+
+        <div class="col-sm-6 col-xs-12" style="margin-top:20px;">
+          <img class="img-rounded" style="width: 100%" src="assets/g4.png">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-xs-12" style="margin-top:20px;">
+          <img class="img-rounded" style="width: 100%" src="assets/g5.png">
+        </div>
+        <div class="col-sm-6 col-xs-12" style="margin-top:20px;">
+          <img class="img-rounded" style="width: 100%" src="assets/g6.png">
+        </div>
+      </div>
+        <hr>
+      <div class="row">
+        <div class="col-sm-6 col-xs-12" style="margin-top:20px">
+          <img class="img-rounded" style="width: 100%" src="assets/insta.gif">
+        </div>
+
+        <div class="col-sm-6 col-xs-12" style="margin-top:20px;">
+          <img class="img-rounded" style="width: 100%" src="assets/insta-2.gif">
+        </div>
+      </div>
+    </div>
+    <!--<div style="font-size: 16px; text-align: left" class="col-xs-11">-->
+      <!--<img class="img-responsive" style="width: 100%" src="assets/banner-2.PNG">-->
+    <!--</div>-->
+  </div>
+  <hr>
+</div>
+<hr>
+
+
+<div style="background-color: darkgray">
+  <div id="logo" class="divSpace container">
+    <h1>Logo</h1>
+    <hr>
+    <img class="img-responsive" style="display: block;margin: 0 auto;padding-top: 20px; width: 30%" src="assets/icon.png">
+  </div>
+  <hr>
+</div>
+<hr>
+
+
+
+<div id="contact" style="background-color: white">
+  <div id="downloads" class="divSpace container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <h1>{{languageChanger.getLabelName("Downloads")}}</h1>
+        <hr>
+        <div class="col-xs-12 col-sm-6">
+          <label style="font-family: Consolas;text-align: center;font-size: 18px"> Awesome Circle Press Pack</label>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <a style="text-decoration:none;" href="assets/Awesome Circle press pack.7z" download="Awesome Circle.7z"><button class="btn btn-success btn-xl" style="padding-top: 10px;padding-left: 18px;font-family: Consolas;font-size: 100%">
+            <span style="margin-right: 5%;float: left; font-family: 'Glyphicons Halflings'" class="glyphicon-save"></span>
+            Awesome circle.zip </button></a>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6">
+        <h1>{{languageChanger.getLabelName("Contact")}}</h1>
+        <hr>
+        <div style="font-family: Consolas; font-size: 19px; text-align: left" class="col-xs-6">
+          <b style="font-family: Calibri">E-mail</b>: devkomarek@gmail.com
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+
